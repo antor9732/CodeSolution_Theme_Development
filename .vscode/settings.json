@@ -1,0 +1,8 @@
+{
+    "php.stubs": [
+
+        "*",
+        "all",
+        "wordpress"
+    ]
+}

@@ -1,0 +1,24 @@
+/*================
+Theme Name: CodeSolution
+Theme URI: http://www.codesolution.in
+Description: A responsive, clean and minimalistic theme for WordPress.
+Version: 1.0.0
+Author: Md Mahmudul Hasan
+Author URI: https://github.com/antor9732
+Text Domain: MahmudulHasan
+Requires at least: 6.4
+Tested up to: 6.6
+Requires PHP: 7.0 
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, style-variations, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+===================*/
+
+/*================
+Theme: CodeSolution
+===================*/
+
+
+body{
+    background-color: green;
+}
