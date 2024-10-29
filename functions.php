@@ -26,6 +26,33 @@ function codeSolution_css_js_file_calling(){
 add_action( 'wp_enqueue_scripts', 'codeSolution_css_js_file_calling' );
 
 
+//Theme function for Menu
+   function codesolution_customize_register($wp_customize){
+
+      $wp_customize->add_section('codesolution_header_area', array(
+
+         'title' => __('header Area', 'MahmudulHasan'),
+         'description' => __('If you want to change the header area, you can change it from here'),
+      ));
+
+      $wp_customize->add_setting('codesolution_logo', array(
+
+         'default' => get_bloginfo('template_directory') . '/img/Solution_it.png',
+         'transport'=> 'refresh',
+      ));
+      $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'codesolution_logo', array(
+         'label'=> 'Logo Upload',
+         'description' => __('If you want to change or upload the logo, you can change it from here'),
+         'setting' => 'codesolution_logo',
+         'section' => 'codesolution_header_area',
+
+      )));
+
+   }
+
+   add_action('customize_register', 'codesolution_customize_register');
+
+
 
 
 
