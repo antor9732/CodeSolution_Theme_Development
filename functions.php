@@ -26,6 +26,13 @@ function codeSolution_css_js_file_calling(){
 add_action( 'wp_enqueue_scripts', 'codeSolution_css_js_file_calling' );
 
 
+//Google font Enqueue
+function codeSolution_add_google_font(){
+   wp_enqueue_style( 'codesolution_google-font', 'https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald:wght@200..700&display=swap', false );
+}
+add_action( 'wp_enqueue_scripts', 'codeSolution_add_google_font' );
+
+
 //Theme function for Menu
    function codesolution_customize_register($wp_customize){
 
