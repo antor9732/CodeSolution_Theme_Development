@@ -104,3 +104,6 @@ body {
     background: #ff6600;
     color: #fff;
   }
+  #header_area.left_menu .col-md-3{
+  order: 2;
+}

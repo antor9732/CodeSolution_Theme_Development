@@ -35,6 +35,7 @@ add_action( 'wp_enqueue_scripts', 'codeSolution_add_google_font' );
 //Theme function for Menu
    function codesolution_customize_register($wp_customize){
 
+      //Header Area Function
       $wp_customize->add_section('codesolution_header_area', array(
 
          'title' => __('header Area', 'MahmudulHasan'),
@@ -54,6 +55,29 @@ add_action( 'wp_enqueue_scripts', 'codeSolution_add_google_font' );
 
       )));
 
+      //Menu Area Function
+      $wp_customize->add_section('codesolution_menu_option', array(
+         'title' => __('Menu Position Option', 'MahmudulHasan'),
+         'description' => __('If you Interested to change the menu position, you can change it from here'),
+
+      ));
+      $wp_customize->add_setting('codesolution_menu_position',array(
+         'default' => 'right_menu',
+         'transport' => 'refresh',
+      ));
+      $wp_customize->add_control('codesolution_menu_position', array(
+         'label'=> 'Menu Position',
+         'description' => __('select the menu position from here'),
+         'setting' => 'codesolution_menu_position',
+         'section' => 'codesolution_menu_option',
+         'type' => 'radio',
+         'choices' => array(
+            'left_menu' => 'Left Menu',
+            'right_menu' => 'Right Menu',
+            'center_menu' => 'Center Menu',
+         )
+         
+      ));
    }
 
    add_action('customize_register', 'codesolution_customize_register');

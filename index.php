@@ -15,7 +15,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="header_area">
+    <div id="header_area" class="<?php echo get_theme_mod('codesolution_menu_position'); ?>">
         <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -23,7 +23,7 @@
             </div>
             <div class="col-md-9">
                 <!-- nev bar menu -->
-                <?php wp_nav_menu(array('theme_location' => 'main_menu', 'menu_id' => false)); ?>
+                <?php wp_nav_menu(array('theme_location' => 'main_menu', 'menu_id' => 'nav')); ?>
             </div>
         </div>
         </div>
