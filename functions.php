@@ -3,7 +3,6 @@
  * My Theme functions and definitions
  */
 
-
  // Theme Title
  add_theme_support('title-tag');
 
@@ -59,18 +58,7 @@ add_action( 'wp_enqueue_scripts', 'codeSolution_add_google_font' );
 
    add_action('customize_register', 'codesolution_customize_register');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Menu Register
+register_nav_menu('main_menu', __('Primary Menu', 'MahmudulHasan'));
 
 ?>
