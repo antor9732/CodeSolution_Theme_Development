@@ -147,3 +147,36 @@ body {
   #header_area.center_menu .col-md-9 ul ul{
   text-align: left;
 }
+
+
+/*=======================================
+   Header Area Style
+  ========================================*/
+
+#copyright_area{
+  background: #262626;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+
+
+}
+#copyright_area p{
+  font-size: 15px;
+  margin: 0;
+  color: #fff;
+
+
+
+}
+#copyright_area p a{
+  font-size: 15px;
+  margin: 0;
+  color: #ff6600;
+
+}
+#copyright_area p a:hover{
+  text-decoration: underline;
+  color: #ff6600;
+
+}

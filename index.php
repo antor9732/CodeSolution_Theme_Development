@@ -1,45 +1,55 @@
-<?php
+<section?php
 
-/**
- * This template for displaying the header
- */
+    /**
+    * This template for displaying the header
+    */
 
-?>
-<!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>" class="no-js">
+    ?>
+    <!DOCTYPE html>
+    <html lang="<?php language_attributes(); ?>" class="no-js">
 
-<head>
-    <meta charset="<?php bloginfo('charset') ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php wp_head();  ?>
-</head>
+    <head>
+        <meta charset="<?php bloginfo('charset') ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?php wp_head();  ?>
+    </head>
 
-<body <?php body_class(); ?>>
-    <header id="header_area" class="<?php echo get_theme_mod('codesolution_menu_position'); ?>">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_mod('codesolution_logo'); ?>" alt=""></a>
-            </div>
-            <div class="col-md-9">
-                <!-- nev bar menu -->
-                <?php wp_nav_menu(array('theme_location' => 'main_menu', 'menu_id' => 'nav')); ?>
-            </div>
-        </div>
-        </div>
-    </header>
-
-    <section id="body_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                <?php the_content(); ?>
+    <body <?php body_class(); ?>>
+        <header id="header_area" class="<?php echo get_theme_mod('codesolution_menu_position'); ?>">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_mod('codesolution_logo'); ?>" alt=""></a>
+                    </div>
+                    <div class="col-md-9">
+                        <!-- nev bar menu -->
+                        <?php wp_nav_menu(array('theme_location' => 'main_menu', 'menu_id' => 'nav')); ?>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <?php wp_footer(); ?>
-</body>
+        <section id="body_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer_area">
+            <section id="copyright_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><?php echo get_theme_mod('codesolution_copyright_section');?></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+            <?php wp_footer(); ?>
+    </body>
 
-</html>
+    </html>

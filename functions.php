@@ -78,6 +78,27 @@ add_action( 'wp_enqueue_scripts', 'codeSolution_add_google_font' );
          )
          
       ));
+
+
+      //Footer Area Function
+      $wp_customize->add_section('codesolution_footer_option', array(
+         'title' => __('Footer Option', 'MahmudulHasan'),
+         'description' => __('If you Interested to change or the footer position, you can change it from here'),
+
+      ));
+      $wp_customize->add_setting('codesolution_copyright_section',array(
+         'default' => '&copy; Copyright 2024 | CodeSolution IT',
+         'transport' => 'refresh',
+      ));
+      $wp_customize->add_control('codesolution_copyright_section', array(
+         'label'=> 'Copyright Text',
+         'description' => __('If you can update your copyright text from here'),
+         'setting' => 'codesolution_copyright_section',
+         'section' => 'codesolution_footer_option',
+         'type' => 'textarea',
+      ));
+
+
    }
 
    add_action('customize_register', 'codesolution_customize_register');
