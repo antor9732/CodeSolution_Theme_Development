@@ -16,7 +16,7 @@
 
     <body <?php body_class(); ?>>
         <header id="header_area" class="<?php echo get_theme_mod('codesolution_menu_position'); ?>">
-           <div id="notice">
+           <!-- <div id="notice">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-           </div>
+           </div> -->
         <div class="container">
                 <div class="row">
                     <div class="col-md-3">
