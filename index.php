@@ -26,8 +26,13 @@ get_header();
                     endwhile;
                 else :
                     _e('No Post found');
-                endif;
-                ?>
+                endif; ?>
+                <div id="page_nav">
+                    <?php if('codesolution_pagenav') {codesolution_pagenav();} else{  ?>
+                        <?php next_posts_link( '' ); ?>
+                        <?php previous_posts_link( '' ); ?>
+                        <?php }  ?>
+                </div>
             </div>
             <div class="col-md-3">
                 <h2>This is sidebar area</h2>

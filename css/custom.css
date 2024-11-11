@@ -24,6 +24,18 @@ img {
   max-width: 100%;
 }
 
+a.readmore {
+  display: inline-block;
+  background: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  transition: 0.5s;
+}
+a.readmore:hover {
+  background: #262626;
+}
+
 /*=======================================
    Header Area Style
   ========================================*/
@@ -174,7 +186,9 @@ img {
 }
 #body_area .blog_area {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  background: #ebebeb;
+  padding: 15px;
 }
 #body_area .post_thumb {
   width: 100%;
@@ -205,6 +219,35 @@ img {
 }
 #body_area .post_details h2 a:hover {
   color: #ff6600;
+}
+
+/*=======================================
+   pagenav Area Style
+  ========================================*/
+#page_nav {
+}
+#page_nav p.pages {
+  background: #ff6600;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+#page_nav p.pages span {
+  display: inline-block;
+  padding: 0 5px;
+}
+#page_nav .page-numbers {
+  background: #ff6600;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+#page_nav .page-numbers.current,
+#page_nav .page-numbers:hover {
+  background: #262626;
 }
 
 /*=======================================
