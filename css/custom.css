@@ -53,6 +53,7 @@ a.readmore:hover {
 
 #header_area {
   padding: 0px 0 15px 0;
+  box-shadow: #e4e4e4 5px 0px 10px;
 }
 #header_area .col-md-3 {
   align-content: center;
@@ -187,7 +188,9 @@ a.readmore:hover {
 #body_area .blog_area {
   width: 100%;
   margin-bottom: 18px;
-  background: #ebebeb;
+  /* background: #ebebeb; */
+    box-shadow: #ddd 0px 0px 10px;
+    border-radius: 12px;
   padding: 15px;
 }
 #body_area .post_thumb {
@@ -219,6 +222,86 @@ a.readmore:hover {
 }
 #body_area .post_details h2 a:hover {
   color: #ff6600;
+}
+
+/*=======================================
+   Sidebar Area Style
+  ========================================*/
+  #body_area .child_sidebar{
+    margin-bottom: 20px;
+  }
+  #body_area .child_sidebar form{
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #body_area .child_sidebar input[type="search"] {
+    background: #ececec;
+    border: 0px;
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+    margin: 2px;
+   
+  }
+  #body_area .child_sidebar button[type="submit"] {
+    background: #ff6600;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    transition: 0.5s;
+}
+  #body_area .child_sidebar button[type="submit"]:hover {
+    background: #262626;
+    border: 1px solid #262626;
+    
+}
+  #body_area .child_sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    
+}
+#body_area .child_sidebar ul li{
+  margin-bottom: 5px;
+  display: block;
+}
+#body_area .child_sidebar ul li a{
+  display: inline-block;
+  color: #262626;
+  text-decoration: none;
+}
+#body_area .child_sidebar ul li a:hover{
+  color: #ff6600;
+}
+#body_area .child_sidebar h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+#body_area .child_sidebar td#today {
+  background: #ff6600;
+  color: #fff;
+}
+#body_area .child_sidebar a.tag-cloud-link {
+  color: #ff6600;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+#body_area .child_sidebar a.tag-cloud-link:hover {
+  background: #ff6600;
+  color: #fff;
+  border: 1px solid #ff6600;
 }
 
 /*=======================================
