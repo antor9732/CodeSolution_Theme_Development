@@ -210,6 +210,9 @@ a.readmore:hover {
 #body_area .post_details {
   width: 100%;
 }
+#body_area .post_details div {
+  width: 100% !important;
+}
 #body_area .post_details h2 {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -373,4 +376,14 @@ a.readmore:hover {
 #copyright_area p a:hover {
   text-decoration: underline;
   color: #ff6600;
+}
+/*=======================================
+     Comment Area Style
+    ========================================*/
+#comments_area h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1em;
 }
