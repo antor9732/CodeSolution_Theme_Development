@@ -28,10 +28,12 @@ get_header();
                     _e('No Post found');
                 endif; ?>
                 <div id="page_nav">
-                    <?php if('codesolution_pagenav') {codesolution_pagenav();} else{  ?>
-                        <?php next_posts_link( '' ); ?>
-                        <?php previous_posts_link( '' ); ?>
-                        <?php }  ?>
+                    <?php if ('codesolution_pagenav') {
+                        codesolution_pagenav();
+                    } else {  ?>
+                        <?php next_posts_link(''); ?>
+                        <?php previous_posts_link(''); ?>
+                    <?php }  ?>
                 </div>
             </div>
             <div class="col-md-3">
