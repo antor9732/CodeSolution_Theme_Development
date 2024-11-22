@@ -89,7 +89,6 @@ a.readmore:hover {
   background: #ff6600;
   color: #fff;
 }
-
 /*Dropdown Menu*/
 #header_area .col-md-9 ul li ul {
   background: #262626 none repeat scroll 0 0;
@@ -123,7 +122,6 @@ a.readmore:hover {
   background: none;
   color: #fff;
 }
-
 /*Sub Dropdown Menu*/
 #header_area .col-md-9 ul li ul ul {
   left: -99999px;
@@ -177,11 +175,9 @@ a.readmore:hover {
 #header_area.center_menu .col-md-9 ul ul {
   text-align: left;
 }
-
 /*=======================================
    Index page Style
   ========================================*/
-
 #body_area {
   padding: 45px 0;
 }
@@ -206,7 +202,6 @@ a.readmore:hover {
 #body_area .post_thumb:hover img {
   transform: scale(1.1);
 }
-
 #body_area .post_details {
   width: 100%;
 }
@@ -225,6 +220,27 @@ a.readmore:hover {
 }
 #body_area .post_details h2 a:hover {
   color: #ff6600;
+}
+/*=======================================
+   Archive Style
+  ========================================*/
+#archive_title,
+#search_title {
+  background: #ff6600;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+#archive_title,
+#search_title h1 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#archive_title p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
 /*=======================================
@@ -268,7 +284,7 @@ a.readmore:hover {
 }
 .child_sidebar ul li {
   margin-bottom: 5px;
-  display: block;
+  display: inline-block;
 }
 .child_sidebar ul ul {
   display: none;
@@ -309,6 +325,23 @@ a.readmore:hover {
   color: #fff;
   border: 1px solid #ff6600;
 }
+.child_sidebar .wp-block-categories a {
+  color: #ff6600;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+.child_sidebar .wp-block-categories a:hover {
+  background: #ff6600;
+  color: #fff;
+  border: 1px solid #ff6600;
+}
 /*=======================================
    Footer Area Style
   ========================================*/
@@ -317,6 +350,10 @@ a.readmore:hover {
   padding: 40px 0 20px;
   color: #fff;
   border-bottom: 1px solid #ddd;
+}
+#footer .child_sidebar ul li {
+  margin-bottom: 5px;
+  display: block;
 }
 #footer .child_sidebar ul li a {
   color: #fff;
@@ -353,10 +390,9 @@ a.readmore:hover {
 #page_nav .page-numbers:hover {
   background: #262626;
 }
-
 /*=======================================
      Copyright Area Style
-    ========================================*/
+========================================*/
 #copyright_area {
   background: #262626;
   padding: 20px 0;
@@ -379,11 +415,38 @@ a.readmore:hover {
 }
 /*=======================================
      Comment Area Style
-    ========================================*/
+========================================*/
 #comments_area h3 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 0;
   line-height: 1em;
+}
+#comments_area label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+#comments_area label span {
+  color: #ff6600;
+}
+#comments_area input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+#comments_area textarea,
+#comments_area input {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 15px;
+}
+#comments_area textarea {
+  min-height: 150px;
+}
+
+#comments_area input[type="submit"] {
+  color: #fff;
+  background: #ff6600;
 }
