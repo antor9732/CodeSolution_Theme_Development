@@ -311,13 +311,17 @@ a.readmore:hover {
   ========================================*/
 #footer {
   background: #262626;
-  padding: 20px 0;
+  padding: 40px 0 20px;
   color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 #footer .child_sidebar ul li a {
   color: #fff;
 }
-
+#footer .child_sidebar h2 {
+  border-left: 3px solid #ff6600;
+  padding-left: 5px;
+}
 /*=======================================
    pagenav Area Style
   ========================================*/
