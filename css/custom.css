@@ -243,6 +243,71 @@ a.readmore:hover {
 }
 
 /*=======================================
+   404 Area Style
+  ========================================*/
+.error_page{
+  padding: 5px 0;
+  text-align: center;
+}
+.error_page p{
+  color: #ff6600;
+  margin-bottom: 0;
+
+}
+.error_page h1{
+  color: #262626;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+.error_page a.homepage {
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s;
+  background: #ff6600;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.error_page a.homepage:hover {
+  transition: 0.5s;
+  background: #262626;
+}
+
+.error_search{
+  margin-bottom: 15px;
+  display: block;
+}
+.error_search input[type="text"] {
+  background: #ececec;
+  border: 0px solid #ececec;
+  border-radius: 8px 0 0 8px;
+  padding: 10px;
+  margin: 2px;
+}
+.error_search input[type="text"]:focus {
+  border: 0px solid #ececec;
+}
+.error_search input[type="submit"] {
+  background: #ff6600;
+  border: 1px solid #ddd;
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+  margin: 0;
+  color: white; 
+  transition: 0.5s;
+}
+.error_search input[type="submit"]:hover {
+  background: #262626;
+  border: 1px solid #262626;
+}
+
+/*=======================================
    Sidebar Area Style
   ========================================*/
 .child_sidebar {
