@@ -64,6 +64,46 @@ function codesolution_customize_register($wp_customize)
         'section' => 'codesolution_footer_option',
         'type' => 'textarea',
     ));
+    //Theme Color
+    $wp_customize->add_section('codesolution_theme_color', array(
+
+        'title' => __('Theme Color', 'MahmudulHasan'),
+        'description' => __('If you want to change the theme color, you can change it from here'),
+    ));
+    $wp_customize->add_setting('codesolution_bg_color', array(
+
+        'default' => '#ffffff',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'codesolution_bg_color', array(
+
+        'label' => __('Background Color', 'MahmudulHasan'),
+        'section' => 'codesolution_theme_color',
+        'settings' => 'codesolution_bg_color',
+
+    )));
+    $wp_customize->add_setting('codesolution_primary_color', array(
+
+        'default' => '#ff6600',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'codesolution_primary_color', array(
+
+        'label' => __('Primary Color', 'MahmudulHasan'),
+        'section' => 'codesolution_theme_color',
+        'settings' => 'codesolution_primary_color',
+
+    )));
 }
 
 add_action('customize_register', 'codesolution_customize_register');
+  function codesolution_theme_color_cus(){
+    ?>
+    <style>
+        body{
+            background-color:<?php echo get_theme_mod('codesolution_bg_color');?>}
+        :root{ --button-bg-color: <?php echo get_theme_mod('codesolution_primary_color'); ?>}
+    </style>
+    <?php
+  }
+  add_action('wp_head', 'codesolution_theme_color_cus');
