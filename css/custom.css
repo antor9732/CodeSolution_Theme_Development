@@ -4,6 +4,7 @@
 :root{
   --primary-color: #0d6efd;
   --secondary-color: #6c757d;
+  --blog-bg-color: #dddddd;
   --button-bg-color: #ff6600;
   --quaternary-color: #6f42c1;
   --quinary-color: #dc3545;
@@ -39,6 +40,7 @@ h6 {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a.readmore {
@@ -530,4 +532,15 @@ a.readmore:hover {
 #comments_area input[type="submit"] {
   color: var(--denary-color);
   background: var(--button-bg-color);
+}
+
+/*Theme Service area style*/
+#service_area {
+  padding: 45px 0;
+}
+#service_area .child_service {
+background: var(--blog-bg-color);
+box-shadow: 0 0 10px var(--blog-bg-color);
+padding: 15px;
+border-radius: 15px;
 }
