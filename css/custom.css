@@ -55,6 +55,19 @@ a.readmore:hover {
   background: #262626;
 }
 
+.button{
+  background: var(--button-bg-color);
+  color: var(--denary-color);
+  text-decoration: none;
+  padding: 10px 14px;
+  transition: 0.5s;
+  border-radius: 5px;
+  display: inline-block;
+}
+.button:hover {
+  background: var(--nonary-color);
+}
+
 /*=======================================
    Header Area Style
   ========================================*/
