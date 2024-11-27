@@ -209,6 +209,9 @@ a.readmore:hover {
 #header_area.left_menu .col-md-9 ul {
   text-align: right;
 }
+#header_area.left_menu .col-md-9 ul li{
+  text-align: left;
+}
 #header_area.center_menu .col-md-3 {
   width: 100%;
   text-align: center;
@@ -253,9 +256,15 @@ a.readmore:hover {
 #body_area .post_details {
   width: 100%;
 }
-#body_area .post_details div {
+#body_area .post_details section {
+  width: 100% !important;
+  display: inline-block;
+}
+
+#body_area .post_details .col-md-4 {
   width: 100% !important;
 }
+
 #body_area .post_details h2 {
   font-family: var(--primary-font);
   font-size: 30px;

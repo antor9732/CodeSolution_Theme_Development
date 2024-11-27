@@ -1,7 +1,7 @@
 <?php
 
 /*
-* WordPress Shortcode
+   *WordPress Shortcode
  */
 function basic_shortcode()
 {
@@ -18,16 +18,16 @@ function button_shortcode($atts, $content = null)
 }
 add_shortcode('button', 'button_shortcode');
 
-//Shortcode & Custom Post 
+/** Shortcode & Custom Post Types **/
+//service Shortcode 
 function service_shortcode($atts)
 {
    ob_start();
    $query = new WP_Query(array(
 
       'post_type' => 'service',
-      'post_status' => 'publish',
       'posts_per_page' => 3,
-      'order' => 'ABC',
+      'order' => 'ASC',
       'orderby' => 'title',
 
    ));
@@ -39,19 +39,52 @@ function service_shortcode($atts)
 
                <?php while ($query->have_posts()) : $query->the_post();
                ?>
-                     <div class="col-md-4">
-                        <div class="child_service">
-                           <h2><?php the_title(); ?></h2>
-                           <?php echo the_post_thumbnail('service') ?>
-                           <?php the_excerpt(); ?>
-                        </div>
+                  <div class="col-md-4">
+                     <div class="child_service">
+                        <h2><?php the_title(); ?></h2>
+                        <?php echo the_post_thumbnail('service') ?>
+                        <?php the_excerpt(); ?>
                      </div>
+                  </div>
 
                <?php
-                  endwhile;
-                  wp_reset_postdata();
+               endwhile;
+               wp_reset_postdata();
                ?>
             </div>
+         </div>
+      </section>
+
+   <?php $myvariable = ob_get_clean();
+      return $myvariable;
+   }
+}
+add_shortcode('service', 'service_shortcode');
+
+function slider_shortcode($atts)
+{
+   ob_start();
+   $query = new WP_Query(array(
+
+      'post_type' => 'slider',
+      'posts_per_page' => 3,
+      'order' => 'ASC',
+      'orderby' => 'title',
+
+   ));
+   if ($query->have_posts()) {
+   ?>
+      <section id="slider_area">
+         <div class="slider">
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+
+               <div>
+                  <?php echo the_post_thumbnail('slider') ?>
+               </div>
+
+            <?php
+            endwhile; wp_reset_postdata();
+            ?>
          </div>
       </section>
 
@@ -59,4 +92,4 @@ function service_shortcode($atts)
       return $myvariable;
    }
 }
-add_shortcode('service', 'service_shortcode');
+add_shortcode('slider', 'slider_shortcode');
