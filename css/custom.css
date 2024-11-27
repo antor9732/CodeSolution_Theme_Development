@@ -209,7 +209,7 @@ a.readmore:hover {
   order: 1;
 }
 #header_area.left_menu .col-md-9 ul {
-  text-align: left;
+  text-align: right;
 }
 #header_area.center_menu .col-md-3 {
   width: 100%;
@@ -477,10 +477,8 @@ a.readmore:hover {
   padding-left: 5px;
 }
 /*=======================================
-   pagenav Area Style
+   Page-Nav Area Style
   ========================================*/
-#page_nav {
-}
 #page_nav p.pages {
   background: var(--button-bg-color);
   color: var(--denary-color);
