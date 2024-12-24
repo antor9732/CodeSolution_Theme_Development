@@ -6,6 +6,7 @@
 
 get_header(); ?>
 
+
 <section id="slider_area">
   <div class="slider">
     <?php
@@ -26,26 +27,35 @@ get_header(); ?>
 </section>
 
 
-<section id="slider_area">
+<!-- <section id="slider_area">
   <div id="owl-slider" class="owl-carousel owl-theme">
 
   <?php
-    query_posts('post_type=slider&post_status=publish&posts_per_page=3&order=ASC&paged=' . get_query_var('post'));
+  query_posts('post_type=slider&post_status=publish&posts_per_page=3&order=ASC&paged=' . get_query_var('post'));
 
-    if (have_posts()) :
-      while (have_posts()) : the_post();
-    ?>
+  if (have_posts()) :
+    while (have_posts()) : the_post();
+  ?>
         <div>
           <?php echo the_post_thumbnail('slider') ?>
         </div>
 
     <?php
-      endwhile;
-    endif;
+    endwhile;
+  endif;
     ?>
     </div>
-</section>
+</section> -->
 
+<div id="homepage_post">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <?php dynamic_sidebar('home-1'); ?>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section id="service_area">
   <div class="container">
