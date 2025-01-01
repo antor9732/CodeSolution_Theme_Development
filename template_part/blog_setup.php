@@ -1,5 +1,3 @@
-        
-        
         <?php
         if (have_posts()) :
             while (have_posts()) : the_post();
@@ -10,6 +8,8 @@
                     </div>
                     <div class="post_details">
                         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                        <p><i class="fas fa-calendar-alt"></i> <?php echo the_time('M-d-Y'); ?> <span>at</span> 
+                        <i class="fas fa-clock"></i> <?php echo the_time('g:i a'); ?> </p>
                         <?php the_excerpt(); ?>
                     </div>
                 </div>
