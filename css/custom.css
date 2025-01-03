@@ -104,6 +104,7 @@ a.readmore:hover {
   ========================================*/
 .blog_area .row {
   width: 100%;
+  height: auto;
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
@@ -618,6 +619,9 @@ a.readmore:hover {
 /*=======================================
      Comment Area Style
 ========================================*/
+#comments_area {
+  margin-top: 50px;
+}
 #comments_area h3 {
   font-family: var(--primary-font);
   font-size: 20px;
